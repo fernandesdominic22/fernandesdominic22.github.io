@@ -1,72 +1,52 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    background: #fdfdfd;
-    color: #222;
-    line-height: 1.6;
-  }
-  
-  header {
-    text-align: center;
-    padding: 2rem 1rem;
-    background: #2c3e50;
-    color: white;
-  }
-  
-  .profile-pic {
-    width: 120px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    background: #ecf0f1;
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #2c3e50;
-    font-weight: bold;
-  }
-  
-  section {
-    padding: 2rem;
-    max-width: 900px;
-    margin: auto;
-  }
-  
-  .project {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .project img {
-    width: 200px;
-    border-radius: 10px;
-  }
-  
-  .hobby-grid {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  .hobby-grid div {
-    width: 250px;
-    text-align: center;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background: #ecf0f1;
-    font-size: 0.9rem;
-  }
-  
+/* Reset & Base */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Video Background */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.85; /* You can adjust this if the text isn't visible enough */
+}
+
+/* Page Content */
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #111111;
+  padding: 20vh 10px 0;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+p {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #007acc;
+}
